@@ -1,10 +1,18 @@
 import React from 'react';
 
+
+
 const EnteredNames = (props) => {
+    console.log("Felix", props);
+    return(
     <div>
-        <p>{props.firstName}</p>
-        <p>{props.lastName}</p>
+        <p>{props.onSaveFirstName}</p>
+        <p>{props.onSaveLastName}</p>
+        <p>{props.arraySave.map(names =>(
+            <li>{names}</li>
+        ))}</p>
     </div>
+    );
 
 }
 
